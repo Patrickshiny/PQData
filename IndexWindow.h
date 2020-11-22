@@ -2,6 +2,8 @@
 #define INDEXWINDOW_H
 
 #include <QMainWindow>
+#include <QMenuBar>
+#include <QToolBar>
 
 class IndexWindow : public QMainWindow
 {
@@ -16,6 +18,8 @@ private:
 
     QAction *beginAction;
     QAction *restartAction;
+    QMenuBar *CurrentMenuBar;
+    QToolBar *CurrentToolBar;
 };
 
 #endif // INDEXWINDOW_H
