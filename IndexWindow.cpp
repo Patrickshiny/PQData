@@ -7,4 +7,6 @@ IndexWindow::IndexWindow()
       DataInterface(new DataInterface)
 {
     setWindowTitle(tr("Weather Data Interface"));
+    CurrentMenuBar = new QMenuBar(this);
+    CurrentToolBar = new QToolBar(this);
 }
