@@ -12,6 +12,7 @@ IndexWindow::IndexWindow()
     // CurrentToolBar = new QToolBar(this);
     CurrentToolBar = addToolBar(tr("FrontToolBar"));
     CurrentToolBar->addAction(this);
+    QGuiApplication::setAttribute(CurrentAttribute);
     
     CurrentIndexAction = new QAction(QIcon(tr("ActionIcon.ico")), tr("Open the File"), this);
 }
